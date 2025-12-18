@@ -1,5 +1,8 @@
+
+
 body {
-  font-family: 'Roboto', sans-serif;
+
+  font-family: Arial, sans-serif;
   font-size: 16px;
   color: #434455;
   background-color: #fff;
@@ -14,12 +17,10 @@ ol {
   list-style-type: none;
 }
 
+
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p {
   margin: 0;
 }
@@ -112,6 +113,17 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
+  color: #2e2f42;
+}
+
+/* ПОМИЛКА: camelCase в імені класу */
+.cardSubtitle {
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
   color: #2e2f42;
 }
 
@@ -334,20 +346,7 @@ img {
   background-position: center;
 }
 
-/* Тут я зробив через кому альтернативні варіанти
- медіа правил які можуть використовувати студенти */
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx),
-  screen and (min-resolution: 2x) {
-  .section-hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/hero-mobile@2x.jpg);
-  }
-}
+
 
 .hero-title {
   max-width: 216px;
@@ -357,7 +356,8 @@ img {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  color: #fff;
+  /* ПОМИЛКА: !important */
+  color: #fff !important;
 }
 
 .hero-btn {
@@ -445,6 +445,17 @@ img {
 
 .benefits-subtitle {
   text-align: center;
+}
+
+/* ПОМИЛКА: клас з цифрою */
+.benefits-subtitle1 {
+  text-align: center;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 @media screen and (min-width: 768px) {
@@ -642,6 +653,11 @@ img {
 .page-footer {
   padding: 96px 0;
   background-color: #2e2f42;
+}
+
+/* ПОМИЛКА: селектор по id */
+#mainFooter {
+  display: block;
 }
 
 .footer-container {
@@ -1008,7 +1024,7 @@ img {
 }
 /*#endregion Modal*/
 
-/*#region Modal*/
+/*#region Mobile Menu*/
 
 .mobile-menu {
   position: fixed;
@@ -1099,4 +1115,4 @@ img {
   }
 }
 
-/*#endregion Modal*/
+/*#endregion Mobile Menu*/
