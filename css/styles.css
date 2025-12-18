@@ -498,15 +498,18 @@ img {
   background-color: #f4f4fd;
 }
 
+.team-container {
+  max-width: 296px;
+}
+
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 72px;
 }
 
 .team-item {
-  width: 264px;
+  width: 100%;
   border-radius: 0 0 4px 4px;
   background-color: #fff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -528,10 +531,18 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .team-container {
+    max-width: 584px;
+  }
+
   .team-list {
     display: flex;
     flex-wrap: wrap;
     gap: 64px 24px;
+  }
+
+  .team-item {
+    width: calc((100% - 24px) / 2);
   }
 }
 
