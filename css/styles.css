@@ -449,7 +449,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .benefits-item {
-    width: calc((100% - 72px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 
   .benefits-subtitle {
@@ -720,19 +720,24 @@ img {
   fill: #fff;
 }
 
-.footer-subscribe-form,
-.footer-container {
-  justify-content: center;
-}
-
 @media screen and (max-width: 767px) {
   .footer-logo,
   .footer-title {
     text-align: center;
   }
+
+  .footer-subscribe-form,
+  .footer-container {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 584px;
+    align-items: baseline;
+  }
+
   .footer-logo-wrapper {
     max-width: 264px;
   }
