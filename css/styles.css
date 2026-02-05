@@ -104,6 +104,8 @@ body {
 }
 
 .logo-header {
+  margin-right: 76px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -118,7 +120,8 @@ body {
 }
 
 .nav-list {
-  display: none;
+  display: flex;
+  gap: 40px;
 }
 
 .nav-link {
@@ -154,7 +157,9 @@ body {
 }
 
 .list-contacts {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
 }
 
 .contacts-link {
@@ -1062,11 +1067,15 @@ PAGE FOOTER
 
 /* MEDIA QUERIES */
 
-/* @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+  .nav-item {
+    display: none;
+  }
+
   .header-contacts {
     display: none;
   }
-} */
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -1086,22 +1095,9 @@ PAGE FOOTER
     margin-right: 120px;
   }
 
-  .nav-list {
-    display: flex;
-    gap: 40px;
-  }
-
   .list-contacts {
-    display: flex;
-    flex-direction: column;
-    font-style: normal;
     gap: 12px;
   }
-
-  .contacts-link {
-  color: var(--slate);
-  padding: 0;
-}
 
   .section-hero {
     padding: 112px 0;
@@ -1112,6 +1108,10 @@ PAGE FOOTER
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 36px;
+  }
+
+  .order-button {
+    margin-top: 36px;
   }
 
   .features-list {
