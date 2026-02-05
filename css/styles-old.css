@@ -1,0 +1,197 @@
+:root {
+    --iris: #4d5ae5;
+    --ocean: #404bbf;
+    --navy-blue: #2e2f42;
+    --green: #31d0aa;
+    --slate: #434455;
+    --light-slate: #8e8f99;
+    --cornflower: #e7e9fc;
+    --cloud: #f4f4fd;
+    --navy-blue-modal: rgba(46, 47, 66, 0.4);
+    --grey: rgba(46, 47, 66, 0.7);
+    --white: #fff;
+    --dairy: #fcfcfc;
+}
+:root {
+    --font-family: "Roboto", sans-serif;
+    --second-family: "Raleway", sans-serif;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--slate);
+    background-color: var(--white);
+}
+.logo-web, .logo-studio {
+    font-family: "Raleway", sans-serif;
+}
+h1, h2, h3 {font-family: var(--font-family);} 
+
+/* -------------BODY------------------- */
+body h2 {text-align: center;}
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    /* line-height: 60px; */
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--white);
+    max-width: 496px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-image {
+    background-color: var(--navy-blue);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.hero-button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    cursor: pointer;
+    background-color: var(--iris);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button:hover, .hero-button:focus {background-color: var(--ocean);}
+
+/* -------------FOOTER------------------- */
+footer {background-color: var(--navy-blue);
+    padding: 100px 0;
+}
+footer .logo-studio {color: var(--cloud);}
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--cloud);
+    max-width: 264px;
+}
+footer .logo {
+    margin: 0 0 16px 0;
+    padding: 0; 
+    }
+
+.footer-social .social-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 0;
+}
+footer .social-icon {
+    width: 24px;
+    height: 24px;
+}
+.footer-social p, .footer-input-wrapper p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+footer .social-link:hover,
+footer .social-link:focus {
+    background-color: var(--green);
+}
+.footer-form {
+    max-width: 453px;
+    max-height: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-left: auto;
+    background: var(--navy-blue);
+}
+.footer-lable {
+    display: none
+}
+.footer-input-wrapper {
+    display: flex;
+    flex-direction: column;    
+}
+.footer-input {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    width: 264px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    outline: none;
+    padding: 8px 16px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form ::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: var(--white);
+}
+#footer-subscribe:hover, 
+#footer-subscribe:focus {
+    border: 1px solid var(--green);
+}
+.subscribe-button {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: var(--iris);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+    color: var(--white);
+    border-radius: 4px;
+    padding-block: 8px;
+    padding-inline: 24px;
+    width: 165px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: var(--green);
+}
+#icon-send {
+    fill: var(--white);
+}
+
+/*--2nd way to center the modal overlay
+----display: flex;
+----align-items: center;
+----justify-content: center; 
+*/
